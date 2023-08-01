@@ -1,11 +1,53 @@
-.body {
-    height: 100vh;
+body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    font-family: monospace;
 }
 
 .container {
-    background-color: black;
+    background-color: #000000;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 10px
+}
+
+.display {
+    background-color: gray;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 5rem;
+}
+
+.buttonsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 80px);
+    gap: 4px;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    font-size: 2rem;
+}
+
+.options {
+    background-color: #ffee93;
+}
+
+.right {
+    background-color: #ffc09f;
+}
+
+.numbers {
+    background-color: #79addc
 }
